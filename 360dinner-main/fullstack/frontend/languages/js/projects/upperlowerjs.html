@@ -1,11 +1,4 @@
-<!-- <script>
-    var sttr="apple banana mango"
-    console.log(sttr.length)
 
-    var manu=new String("apple banana mango")
-    var data=manu.small
-    console.log(data)
-</script> -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,11 +12,19 @@
     <body>
         <h1>hello</h1>
        <div id="root"></div>
+       <div id="container"></div>
         
-        <script src="" async defer>
+         <script >
             var a="hello"
-            console.log(a)
+            var a1=a.toLocaleUpperCase()
+            console.log(a1)
             document.getElementById('root').innerHTML=a.toLocaleUpperCase()
-        </script>
+
+            var str = "Hello World!";
+        var res = str.toLocaleLowerCase();
+         console.log(res)
+         document.getElementById('container').innerHTML=str.toLocaleLowerCase()
+        </script> 
+        
     </body>
 </html>
