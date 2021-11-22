@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       
+        <style>
+            body {
+                background: rgb(252, 249, 249);
+                height: 100%;
+                }
+
+                #root {
+                margin: 20px;
+                padding: 20px;
+                background: orange;
+                line-height: 18px;
+                height: 18px;
+                font-size: 18px;
+            }
+            .container{
+                background-color: blanchedalmond;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        
+        <div id="root">Registration Form</div>
+        <div class="container">
+        <label for="fullname">Full Name :</label>
+        <input id="fullname" type="text" value="" placeholder="Enter your full name" /> </br>
+        <label for="emailid">Email Id:</label>
+        <input id="emailid" type="text" value="" placeholder="Enter emailid" /> </br>
+        <label for="password">Password :</label>
+        <input id="password" type="password" value="" placeholder="Enter Password" /> </br>
+        <label for="inputstate" class="form-label">State</label>
+              <select id="inputstate" class="form-select">
+                <option selected>Choose...</option>
+                <option value="1"> Australia </option>
+                <option value="2"> Maleshia </option>
+                <option value="3"> Uk </option>
+                <option> USA </option>
+                <option> India </option>
+                <option> Bangladesh </option>
+                <option> Russia </option>
+                <option> Canada </option>
+              </select> </br>
+            
+        
+        <button onclick="submit()">Submit</button>
+        </div>
+        <script>
+
+            var arr1=[]
+            function submit(){
+                var name=document.getElementById("fullname").value;
+                var emailid=document.getElementById("emailid").value;
+                var password=document.getElementById("password").value;
+                var e=document.getElementById("inputstate")
+                var inputstate=e.options[e.selectedIndex].text
+                console.log(name)
+                console.log(emailid)
+                console.log(password)
+                console.log(inputstate)
+
+                arr1.push(name)
+                console.log(arr1)
+                arr1.pop()
+                console.log(arr1)
+
+                arr1.push(emailid)
+                console.log(arr1)
+                arr1.pop()
+                console.log(arr1)
+
+                arr1.push(password)
+                console.log(arr1)
+                arr1.pop()
+                console.log(arr1)
+
+                arr1.push(inputstate)
+                console.log(arr1)
+                arr1.pop()
+                console.log(arr1)
+
+            }
+        </script>
+    </body>
+</html>
