@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       
+
+        <center>
+            <h1>guessing the month</h1>
+            <br>
+            <h1 id="root"></h1>
+            <br>
+            <button onclick="month()">click me</button>
+            <!-- <br> -->
+        </center>
+        
+        <script>
+
+            function month(){
+                var ran=Math.floor(Math.random()*12+1)
+                switch(ran){
+                    case 1:
+                        document.getElementById('root').innerHTML='jan'
+                        break;
+                        case 2:
+                        document.getElementById('root').innerHTML='feb'
+                        break;
+                        case 3:
+                        document.getElementById('root').innerHTML='march'
+                        break;
+                        case 4:
+                        document.getElementById('root').innerHTML='april'
+                        break;
+                        case 5:
+                        document.getElementById('root').innerHTML='may'
+                        break;
+                        case 6:
+                        document.getElementById('root').innerHTML='june'
+                        break;
+                        case 7:
+                        document.getElementById('root').innerHTML='july'
+                        break;
+                        case 8:
+                        document.getElementById('root').innerHTML='aug'
+                        break;
+                        case 9:
+                        document.getElementById('root').innerHTML='sep'
+                        break;
+                        case 10:
+                        document.getElementById('root').innerHTML='oct'
+                        break;
+                        case 11:
+                        document.getElementById('root').innerHTML='nov'
+                        break;
+                        case 12:
+                        document.getElementById('root').innerHTML='dec'
+                        break;
+                        default:
+                        document.getElementById('root').innerHTML='invalid'
+                }
+            }
+
+        </script>
+    </body>
+</html>

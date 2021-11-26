@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+      <center>
+
+        <h1>Welcome to guessing game</h1>
+        <br>
+        <div id="root"></div>
+        <br>
+        <button onclick="random()">play here</button>
+        <!-- <br> -->
+
+      </center>
+        
+
+        <script>
+            function random(){
+            var random=Math.floor(Math.random()*6+1)
+            document.getElementById('root').innerHTML=random
+            }
+        </script>
+    </body>
+</html>
